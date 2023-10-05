@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grit:lab Waffle Day</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Logo_White.png" alt="Grit:lab Logo" id="logo">
+      <h1>Waffle Day</h1>
+    </header>
+    <main>
+      <center>
+        <p>
+          Welcome to Grit:lab's celebration of Waffles! Join us for a day filled
+          with delicious waffles and great company.
+        </p>
+        <div id="raffle-section">
+            <button id="raffle-button">Draw a Number</button>
+            <div id="raffle-display">
+                <div class="digit" id="hundreds"></div>
+                <div class="digit" id="tens"></div>
+                <div class="digit" id="units"></div>
+            </div>
+        </div>             
+      </center>
+    </main>
+    <footer>
+      <p>Stay tuned for more updates!</p>
+    </footer>
+    <script>
+        document.getElementById("raffle-button").addEventListener("click", function() {
+            const maxNumber = 999; // Adjust for your maximum number
+            const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
+    
+            const hundreds = Math.floor(randomNumber / 100);
+            const tens = Math.floor((randomNumber % 100) / 10);
+            const units = randomNumber % 10;
+    
+            document.getElementById("hundreds").style.backgroundImage = `url('waffle_${hundreds}.png')`;
+            document.getElementById("tens").style.backgroundImage = `url('waffle_${tens}.png')`;
+            document.getElementById("units").style.backgroundImage = `url('waffle_${units}.png')`;
+        });
+    </script>    
+  </body>
+</html>

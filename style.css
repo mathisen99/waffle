@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E5E0FF;
+    margin: 0;
+    padding: 0;
+    color: #0e1342; /* Adjusted text color to match new darkest blue */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e1342; /* Updated to new darkest blue */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    height: 50px;  /* Adjust this depending on the size of your logo */
+}
+
+main {
+    padding: 20px;
+    background-color: #FFF2F2;
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #0e1342;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #E5E0FF; /* Adjusted to be contrasting against the new darkest blue */
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Raffle Section */
+
+#raffle-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#raffle-button {
+    padding: 10px 20px;
+    background-color: #0e1342;
+    color: #E5E0FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#raffle-button:hover {
+    background-color: #7286D3;
+}
+
+#raffle-number {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #0e1342;
+}
+
+#raffle-display {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.digit {
+    width: 50px;
+    height: 80px;
+    background-size: cover;
+    margin: 0 5px;
+}
