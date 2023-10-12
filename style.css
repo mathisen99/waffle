@@ -14,12 +14,12 @@ header {
     background-color: #0e1342; /* Updated to new darkest blue */
     padding: 20px 0;
     text-align: center;
-    position: relative;
+    height: 50px;
 }
 
 #logo {
     position: absolute;
-    bottom: 10px; /* Adjust this based on your preference */
+    top: 10px; /* Adjust this based on your preference */
     left: 20px; /* Adjust this based on your preference */
     height: 50px;  /* Adjust this depending on the size of your logo */
 }
