@@ -19,9 +19,8 @@ header {
 
 #logo {
     position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
+    bottom: 10px; /* Adjust this based on your preference */
+    left: 20px; /* Adjust this based on your preference */
     height: 50px;  /* Adjust this depending on the size of your logo */
 }
 
@@ -41,6 +40,7 @@ footer {
     padding: 10px 0;
     text-align: center;
     margin-top: auto;
+    position: relative; /* Added to establish a point of reference for the absolute positioning of the logo */
 }
 
 h1 {
