@@ -5,6 +5,9 @@ body {
     padding: 0;
     color: #0e1342; /* Adjusted text color to match new darkest blue */
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -23,16 +26,21 @@ header {
 }
 
 main {
+    background-image: url('waffle_bg.png');
+    background-size: cover; /* This scales the image to cover the entire div */
+    background-repeat: no-repeat;
     padding: 20px;
     background-color: #FFF2F2;
     margin: 20px 40px;
     border-radius: 10px;
+    min-height: 79vh;
 }
 
 footer {
     background-color: #0e1342;
     padding: 10px 0;
     text-align: center;
+    margin-top: auto;
 }
 
 h1 {
@@ -53,7 +61,7 @@ p {
 
 #raffle-button {
     padding: 10px 20px;
-    background-color: #0e1342;
+    background-color: #ea5f69;
     color: #E5E0FF;
     border: none;
     border-radius: 5px;
@@ -63,7 +71,7 @@ p {
 }
 
 #raffle-button:hover {
-    background-color: #7286D3;
+    background-color: #ea5f69;
 }
 
 #raffle-number {
@@ -79,8 +87,8 @@ p {
 }
 
 .digit {
-    width: 50px;
-    height: 80px;
+    width: 70px;
+    height: 100px;
     background-size: cover;
     margin: 0 5px;
 }
